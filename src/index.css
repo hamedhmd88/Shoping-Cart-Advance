@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0
+}
+body {
+  @apply bg-gradient-to-r from-stone-950 via-stone-800 to-slate-900;
+}
+@keyframes scaleUp {
+    from {
+      transform: scale(0.9);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .animate-form {
+    animation: scaleUp 0.5s ease-in-out forwards;
+  }
+
+  .menu {
+    @apply hover:bg-zinc-700 hover:text-xl px-2 py-1 rounded-lg text-xl italic font-medium transition-colors
+  }
+  .menu.active {
+    @apply bg-zinc-700 
+  }
+  
