@@ -36,8 +36,8 @@ function PopularProdutsForWomen() {
       <div className=" flex flex-col items-center justify-center">
         {/* Hero Section */}
         <section className="w-full ">
-          <div className="text-center mb-3 border-b-4 border-gray-600 drop-shadow-2xl py-2">
-            <h1 className="text-3xl italic font-bold text-slate-400 drop-shadow-2xl mb-4">
+          <div className="text-center mb-3 border-b-4 border-white drop-shadow-2xl py-2">
+            <h1 className="text-3xl italic font-bold text-white drop-shadow-2xl mb-4">
               {" "}
               Popular Products For Women{" "}
             </h1>
@@ -53,7 +53,7 @@ function PopularProdutsForWomen() {
             return (
               <div
                 key={product.id}
-                className=" h-4/5 w-full border-2 border-gray-700 rounded-xl shadow-inner shadow-gray-500 p-6 hover:shadow-inner hover:shadow-gray-300  drop-shadow-2xl transition-shadow"
+                className=" h-4/5 w-full border border-gray-700 rounded-xl shadow-inner shadow-gray-500 p-6 hover:shadow-inner hover:shadow-gray-300  drop-shadow-2xl transition-shadow"
               >
                 <Link to={`/products/${product.id}`}>
                   <img
@@ -77,14 +77,14 @@ function PopularProdutsForWomen() {
                     <>
                       <button
                         onClick={() => dispatch(removeFromCart(product))}
-                        className="px-3 py-1 text-md bg-red-500 text-white rounded-md hover:bg-red-700 transition"
+                        className="px-4 py-2 border  border-red-600 text-red-600 font-extrabold text-md rounded-md hover:bg-red-600 hover:text-gray-200 transition"
                       >
                         -
                       </button>
                       <span className="text-gray-400 font-medium text-lg">{productQuantity}</span>
                       <button
                         onClick={() => dispatch(addToCart(product))}
-                        className="px-3 py-1 text-md bg-blue-500 text-white rounded-md hover:bg-blue-700 transition"
+                        className="px-4 py-2 border  border-blue-600 text-blue-600 font-extrabold text-md rounded-md hover:bg-blue-600 hover:text-gray-200 transition"
                       >
                         +
                       </button>
@@ -92,7 +92,7 @@ function PopularProdutsForWomen() {
                   ) : (
                     <button
                       onClick={() => dispatch(addToCart(product))}
-                      className="px-3 py-2 bg-indigo-700 text-white rounded-md hover:bg-indigo-800 transition"
+                      className="border font-semibold  text-gray-300 px-4 py-2 rounded-lg hover:bg-[#010409] transition"
                     >
                       Add to Cart
                     </button>

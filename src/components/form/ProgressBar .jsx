@@ -6,13 +6,13 @@ const ProgressBar = ({ step }) => {
           
           <div className="flex flex-col items-center">
             <div
-              className={`w-10 h-10 flex items-center justify-center rounded-full z-10 ${
-                index <= step ? 'bg-gray-200 text-gray-800' : 'bg-gray-800 text-gray-200'
+              className={`w-10 h-10 text-xl font-bold flex items-center justify-center border rounded-full z-10 ${
+                index <= step ? 'bg-[#010409] text-gray-200' : 'bg-transparen text-gray-200 opacity-30'
               }`}
             >
               {index + 1}
             </div>
-            <span className={` text-sm ${index <= step ? 'text-gray-400' : 'text-gray-600'} text-xs mt-2`}>
+            <span className={` text-xl font-bold ${index <= step ? 'text-gray-200' : 'text-gray-200'} text-xs mt-2`}>
               {title}
             </span>
           </div>

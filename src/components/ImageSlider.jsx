@@ -67,7 +67,7 @@ function ImageSlider() {
               <img
                 src={image}
                 alt="Logo 1"
-                className="h-16 w-16 object-contain hover:scale-110 transition-transform"
+                className="h-16 w-16 object-contain grayscale hover:scale-110 transition-transform"
               />
               
             </React.Fragment>

@@ -45,22 +45,22 @@ const ProductList = ({ category }) => {
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             placeholder="Search products..."
-            className="w-full md:w-1/3 p-2 mb-4 bg-zinc-300 text-gray-800 border-2 border-gray-600 rounded-md focus:outline-none focus:border-blue-400 placeholder:text-gray-700"
+            className="w-full md:w-1/3 p-2 mb-4  bg-transparent text-gray-200 border-2 border-gray-200 rounded-md focus:outline-none focus:border-blue-100 placeholder:text-gray-200"
           />
 
           <div className="mb-4">
-            <label htmlFor="sort" className="font-semibold text-slate-400 drop-shadow-2xl mr-2">
-              Sort by price:
+            <label htmlFor="sort" className="font-semibold text-grayslate-200 drop-shadow-2xl mr-2">
+              Sort by price
             </label>
             <select
               id="sort"
               value={sortOption}
               onChange={(e) => setSortOption(e.target.value)}
-              className="p-2 bg-zinc-300 text-gray-800 border-2 border-gray-600 rounded-md focus:outline-none focus:border-blue-400"
+              className="p-2 bg-gray-400 text-gray-800  border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-400"
             >
-              <option value="all">All</option>
-              <option value="lowToHigh">Lowest to Highest</option>
-              <option value="highToLow">Highest to Lowest</option>
+              <option className=" bg-transparent" value="all">All</option>
+              <option className=" bg-transparent" value="lowToHigh">Lowest to Highest</option>
+              <option className=" bg-transparent" value="highToLow">Highest to Lowest</option>
             </select>
           </div>
         </div>
@@ -73,13 +73,13 @@ const ProductList = ({ category }) => {
             return (
               <div
                 key={product.id}
-                className="bg-gray-300 h-[400px] border-2 border-gray-700 rounded-xl shadow-lg p-4 hover:shadow-2xl drop-shadow-2xl transition-shadow"
+                className=" h-[400px] border-2 bg-gray-300 border-gray-700 rounded-xl shadow-lg p-4 hover:shadow-2xl drop-shadow-2xl transition-shadow"
               >
                 <Link to={`/products/${product.id}`}>
                   <img
                     src={product.image}
                     alt={product.title}
-                    className="w-full h-1/2 object-contain mix-blend-multiply mb-4 rounded-2xl"
+                    className="w-full h-1/2 opacity- object-contain mix-blend-multiply bg-transparent mb-4 rounded-2xl"
                   />
                   <h3 className="text-lg font-bold mb-2 text-slate-800">
                     {getFirstFiveWords(product.title)}
@@ -132,3 +132,7 @@ const ProductList = ({ category }) => {
 };
 
 export default ProductList;
+
+
+
+

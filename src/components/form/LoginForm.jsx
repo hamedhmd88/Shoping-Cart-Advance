@@ -71,9 +71,9 @@ function LoginForm({ setName, backHandler }) {
 
   return (
     <>
-      <div className=" flex items-center justify-center select-none mt-36">
-        <form onSubmit={changeHandler} className="w-full m-28 max-w-lg p-12  rounded-xl shadow-xl shadow-gray-500 border-2 border-gray-500">
-          <h1 className="text-2xl font-bold text-gray-400 italic text-center mb-6">Registration Form</h1>
+      <div className="min-h-screen  flex items-center justify-center select-none mr-12">
+        <form onSubmit={changeHandler} className="w-full m-28 max-w-lg p-12  rounded-xl   border border-gray-200">
+          <h1 className="text-2xl font-bold text-gray-200 italic text-center mb-6">Registration Form</h1>
           <div className="flex justify-between mb-6">
             <ProgressBar step={formStep} />
           </div>
@@ -111,7 +111,7 @@ function LoginForm({ setName, backHandler }) {
               <button
                 type="button"
                 onClick={prevStep}
-                className="px-4 py-2 bg-gray-800 text-gray-200 rounded hover:bg-zinc-700"
+                className="border font-semibold  text-gray-200 px-4 py-2 rounded-lg hover:bg-[#010409] transition"
               >
                 Previous
               </button>
@@ -120,7 +120,7 @@ function LoginForm({ setName, backHandler }) {
               <button
                 type="button"
                 onClick={nextStep}
-                className="px-4 py-2 bg-gray-800 text-gray-200 rounded hover:bg-zinc-700 ml-auto"
+                className="border font-semibold  text-gray-200 px-4 py-2 rounded-lg hover:bg-[#010409] transition ml-auto"
               >
                 Next
               </button>

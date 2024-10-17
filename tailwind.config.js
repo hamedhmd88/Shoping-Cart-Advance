@@ -6,6 +6,18 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: [
+          '-apple-system', 
+          'BlinkMacSystemFont', 
+          '"Segoe UI"', 
+          'Helvetica', 
+          'Arial', 
+          'sans-serif', 
+          '"Apple Color Emoji"', 
+          '"Segoe UI Emoji"',
+        ],
+      },
       textShadow: {
         'default': '2px 2px 4px rgba(0, 0, 0, 0.3)',
         'lg': '3px 3px 6px rgba(0, 0, 0, 0.4)',
@@ -17,7 +29,7 @@ export default {
         },
       },
       animation: {
-        'scroll-horizontal': 'scroll 20s linear infinite',
+        'scroll-horizontal': 'scroll 30s linear infinite',
       },
     },
   },

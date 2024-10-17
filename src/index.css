@@ -8,7 +8,7 @@
   padding: 0
 }
 body {
-  @apply bg-gradient-to-r from-stone-950 via-stone-800 to-slate-900;
+  @apply bg-[#0D1117] font-sans;
 }
 @keyframes scaleUp {
     from {
@@ -22,13 +22,13 @@ body {
   }
   
   .animate-form {
-    animation: scaleUp 0.5s ease-in-out forwards;
+    animation: scaleUp 12s ease-in-out forwards;
   }
 
   .menu {
-    @apply hover:bg-zinc-700 hover:text-xl px-2 py-1 rounded-lg text-xl italic font-medium transition-colors
+    @apply hover:border-b  hover:text-xl px-2 py-1 rounded-lg text-xl  font-medium transition
   }
   .menu.active {
-    @apply bg-zinc-700 
+    @apply border-b
   }
   

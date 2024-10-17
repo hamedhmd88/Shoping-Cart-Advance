@@ -1,20 +1,20 @@
 import React from "react";
-import about from "../assets/logo/about.jpg"; // Import the appropriate image
+import about1 from "../assets/logo/about1.svg"; // Import the appropriate image
 
 const AboutUs = () => {
   return (
-    <div className="w-full flex flex-col items-center py-12 px-6 bg-gradient-to-r  from-stone-950 via-stone-800 to-slate-900 text-white">
+    <div className="w-full flex flex-col items-center py-12 px-6 bg-[#0D1117] text-white">
       {/* Team image */}
-      <div className="w-full border-2 border-gray-600 rounded-xl my-2 mx-auto max-w-4xl">
+      <div className="w-1/2 border-t-2 border-r-2 border-l-2 border-gray-200 rounded-xl my-2 mx-auto max-w-4xl">
         <img
-          src={about}
+          src={about1}
           alt="About Us Team"
-          className="w-full p-5 h-auto object-cover rounded-2xl shadow-lg"
+          className="w-full p-5 h-96  object-contain rounded-2xl shadow-lg"
         />
       </div>
 
-      <div className="border-l-4 border-b-4 border-gray-600 mt-3">
-        <h2 className="text-3xl italic md:text-4xl font-bold text-left text-slate-400 mt-8 ml-5">
+      <div className="border-l border-b border-gray-200 mt-3">
+        <h2 className="text-3xl  md:text-4xl font-bold text-left text-gray-200 mt-8 ml-5">
           Who We Are?
         </h2>
 
@@ -26,8 +26,8 @@ const AboutUs = () => {
           your needs in the best possible way.
         </p>
       </div>
-      <div className="border-r-4 border-b-4 border-gray-600 mt-3">
-        <h2 className="text-3xl italic md:text-4xl font-bold text-left text-slate-400 mt-8 mr-5">
+      <div className="border-r border-b border-gray-200 mt-3">
+        <h2 className="text-3xl  md:text-4xl font-bold text-left text-gray-200 mt-8 mr-5">
         What We Do?
         </h2>
 
@@ -38,8 +38,8 @@ const AboutUs = () => {
         we strive to deliver the best shopping experience.
         </p>
       </div>
-      <div className="border-l-4 border-b-4 border-gray-600 mt-6">
-        <h2 className="text-3xl italic md:text-4xl font-bold text-left text-slate-400 mt-8 ml-5">
+      <div className="border-l border-b border-gray-200 mt-6">
+        <h2 className="text-3xl  md:text-4xl font-bold text-left text-gray-200 mt-8 ml-5">
         Where to Find Us?
         </h2>
 

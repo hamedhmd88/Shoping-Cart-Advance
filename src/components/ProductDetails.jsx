@@ -18,7 +18,7 @@ const ProductDetails = () => {
   if (error) return <div>Error fetching product details</div>;
 
   return (
-    <div className="max-w-3xl m-28 mx-auto p-6  border-2 border-gray-400  shadow-lg rounded-2xl text-gray-300">
+    <div className="max-w-3xl mb-20 mt-52 mx-auto p-6  border-2 border-gray-400  shadow-lg rounded-2xl text-gray-300">
       <div className="bg-white p-4 rounded-2xl"> 
         <img src={data.image} alt={data.title} className="w-full h-96 object-contain mb-6" />
       </div>
@@ -28,7 +28,7 @@ const ProductDetails = () => {
       <Rating rating={data.rating.rate} />
       <div className=' flex justify-around items-center'>
       <button
-        onClick={() => navigate('/')}
+        onClick={() => navigate('/products')}
         className="my-6 font-semibold px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-900 transition"
       >
         Back to Products

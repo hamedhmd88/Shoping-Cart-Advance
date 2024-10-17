@@ -18,13 +18,13 @@ function Accordn() {
     return (
         <>
             <div className="w-full max-w-xl mx-auto mb-12">
-                <h2 className="text-3xl italic font-bold text-center mb-6 text-slate-400 drop-shadow-2xl">Frequently Asked Questions</h2>
+                <h2 className="text-3xl  font-bold text-center mb-6 text-gray-200 drop-shadow-2xl">Frequently Asked Questions</h2>
                 <div className="space-y-4">
                     {faqs.map((faq, index) => (
                         <div key={index} className="border-2 border-gray-200 rounded-lg">
                             <button
                                 onClick={() => toggleAccordion(index)}
-                                className="w-full text-left text-lg px-4 py-3 text-gray-400 font-medium focus:outline-none flex justify-between items-center"
+                                className="w-full text-left text-xl font-semibold px-4 py-3 text-gray-200 font-medium focus:outline-none flex justify-between items-center"
                             >
                                 {faq.question}
                                 <span>{activeIndex === index ? "-" : "+"}</span>
@@ -34,7 +34,7 @@ function Accordn() {
                                     activeIndex === index ? "max-h-96" : "max-h-0"
                                 }`}
                             >
-                                <div className="px-4 py-3 text-gray-300">
+                                <div className="px-4 py-3 text-center font-semibold text-lg bg-[#010409] text-gray-300">
                                     {faq.answer}
                                 </div>
                             </div>
