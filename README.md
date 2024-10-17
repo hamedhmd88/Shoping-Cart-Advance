@@ -1,7 +1,7 @@
 # Advanced Store Project
 
 ## Live Demo
-You can check out the live demo of the project at the following link : [Shopping Cart](https://shoping-cart-advance.vercel.app/)
+You can check out the live demo of the project at the following link : [Shopping Cart](https://shoping-cart-advance-ruddy.vercel.app/)
 
 ## Project Overview
 This is a dynamic, fully responsive Advanced Store Website built with modern technologies. The website uses the [fakeapi](https://fakestoreapi.com/) for product API integration and features a dark theme design for a sleek user interface.
