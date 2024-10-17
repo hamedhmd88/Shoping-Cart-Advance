@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { addToCart, removeFromCart } from '../redux/cartSlice';
 
 
-function PopularProdutsForWomen() {
+function PopularProdutWomen() {
     const { data: products, isLoading, isError, error } = useQuery("products", fetchProducts);
     const dispatch = useDispatch();
     const cart = useSelector((state) => state.cart);
@@ -107,4 +107,4 @@ function PopularProdutsForWomen() {
   )
 }
 
-export default PopularProdutsForWomen
+export default PopularProdutWomen

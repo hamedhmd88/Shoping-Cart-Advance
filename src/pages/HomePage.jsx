@@ -2,10 +2,12 @@ import React from "react";
 import ImageSlider from "../components/ImageSlider";
 import hero from "../assets/logo/hero.jpg";
 import SectionHomePage from "../components/SectionHomePage";
-import PopularProduct from "../components/PopularProductForMen";
+import PopularProduct from "../components/PopularProductMen";
 import Accordn from "../components/Accordn";
-import PopularProdutsForWomen from "../components/popularProdutsForWomen";
+import PopularProdutsForWomen from "../components/PopularProdutWomen";
 import GridSection from "../components/GridSection";
+import PopularProductMen from "../components/PopularProductMen";
+import PopularProdutWomen from "../components/PopularProdutWomen";
 
 const HomePage = ({ name }) => {
   return (
@@ -34,9 +36,9 @@ const HomePage = ({ name }) => {
 
       <SectionHomePage />
 
-      <PopularProduct />
+      <PopularProductMen />
       
-      <PopularProdutsForWomen />
+      <PopularProdutWomen />
 
       <GridSection/>
 

@@ -13,7 +13,7 @@ import popular5 from "../assets/logo/popular1.png";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeFromCart } from "../redux/cartSlice";
 
-function PopularProduct() {
+function PopularProductMen() {
   const {
     data: products,
     isLoading,
@@ -114,4 +114,4 @@ function PopularProduct() {
   );
 }
 
-export default PopularProduct;
+export default PopularProductMen;
