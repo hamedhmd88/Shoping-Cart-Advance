@@ -1,4 +1,3 @@
-
 import React from "react";
 import { FaCheckCircle, FaUsers, FaFlag, FaAward } from "react-icons/fa";
 
@@ -30,13 +29,14 @@ const GridSection = () => {
               <FaAward size={30} />
             </div>
             <div className=" border-l-2 border-b-2 px-6 py-4 border-red-600 shadow-md ">
-              <h3 className="text-xl font-bold text-gray-200 mb-4">5 Years Of Experience</h3>
+              <h3 className="text-xl font-bold text-gray-200 mb-4">
+                5 Years Of Experience
+              </h3>
               <p className="text-gray-300">
                 Lorem ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem ipsum has.
               </p>
             </div>
-            
           </div>
 
           {/* Feature 2 */}
@@ -45,7 +45,9 @@ const GridSection = () => {
               <FaUsers size={30} />
             </div>
             <div className=" border-l-2 border-b-2 px-6 py-4 border-yellow-600 shadow-md ">
-              <h3 className="text-xl font-bold text-gray-200  mb-4">Expert Team Members</h3>
+              <h3 className="text-xl font-bold text-gray-200  mb-4">
+                Expert Team Members
+              </h3>
               <p className="text-gray-300">
                 Lorem ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem ipsum has.
@@ -59,7 +61,9 @@ const GridSection = () => {
               <FaCheckCircle size={30} />
             </div>
             <div className=" border-l-2 border-b-2 px-6 py-4 border-green-600 shadow-md ">
-              <h3 className="text-xl font-bold text-gray-200  mb-4">100% Satisfaction</h3>
+              <h3 className="text-xl font-bold text-gray-200  mb-4">
+                100% Satisfaction
+              </h3>
               <p className="text-gray-300">
                 Lorem ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem ipsum has.
@@ -73,7 +77,9 @@ const GridSection = () => {
               <FaFlag size={30} />
             </div>
             <div className=" border-l-2 border-b-2 px-6 py-4 border-blue-600 shadow-md ">
-              <h3 className="text-xl font-bold text-gray-200  mb-4">Best In America</h3>
+              <h3 className="text-xl font-bold text-gray-200  mb-4">
+                Best In America
+              </h3>
               <p className="text-gray-300">
                 Lorem ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem ipsum has.
@@ -87,4 +93,3 @@ const GridSection = () => {
 };
 
 export default GridSection;
-
