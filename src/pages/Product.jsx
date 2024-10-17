@@ -7,7 +7,7 @@ function Product() {
 
   return (
     <>
-      <div className="min-h-screen bg-[#0D1117] w-full mt-40">
+      <div className="min-h-screen bg-[#0D1117] w-full mt-10">
       <div className="relative w-full mt-10 shadow-2xl">
           <img
             src={heroo}

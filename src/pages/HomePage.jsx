@@ -11,7 +11,7 @@ import PopularProdutWomen from "../components/PopularProdutWomen";
 
 const HomePage = ({ name }) => {
   return (
-    <div className="min-h-screen bg-[#0D1117] mt-40 flex flex-col items-center justify-center">
+    <div className="min-h-screen bg-[#0D1117] mt-10 flex flex-col items-center justify-center">
       <section className="w-full bg-white">
         <div className="relative shadow-2xl">
           <img

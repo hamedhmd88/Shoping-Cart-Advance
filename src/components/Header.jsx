@@ -42,38 +42,10 @@ const Header = () => {
             className="ml-8 h-14 w-[200px] text-center"
           />
           </Link>
-          
-          <span className="text-2xl text-blue-800 italic font-bold"></span>
-        </div>
+                  </div>
 
         {/* Center Section - Search Bar */}
-        <div className="hidden  md:flex items-center border border-gray-200 text-gray-200 rounded-full px-4 py-2 w-[36%]">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="w-full text-gray-200 outline-none bg-transparent"
-          />
-          <FiSearch className="text-gray-200" />
-        </div>
-
-        {/* Right Section - Login and Cart Icons */}
-        <div className="flex mr-32 justify-center gap-4 items-center w-[12%]">
-          <Link to="/login" className="border-r-2 pr-4">
-            <FiUser className="text-4xl cursor-pointer" />
-          </Link>
-          {/* <FiShoppingCart className="text-2xl cursor-pointer" /> */}
-          <CartIcon />
-        </div>
-
-        {/* Mobile Search Icon */}
-        {/* <div className="flex md:hidden">
-          <FiSearch className="text-2xl" />
-        </div> */}
-      </div>
-
-      {/* Lower Section */}
-      <div className="w-full flex justify-around items-center  mb-5">
-        {/* Left Section - Navigation Links */}
+        { <div className="w-full flex justify-around items-center mb-5">
         <nav className="hidden md:flex space-x-6">
           <NavLink
             to="/"
@@ -107,21 +79,6 @@ const Header = () => {
           </NavLink>
         </nav>
 
-        {/* Right Section - Contact Info */}
-        {/* <div className="hidden md:flex space-x-6 items-center gap-5">
-          <div className="flex items-center space-x-1">
-            <FiPhone className="text-xl  " />
-            <span className=" text-xl text-zinc-500 font-medium">
-              +123 456 789
-            </span>
-          </div>
-          <div className="flex items-center space-x-1 gap-1">
-            <FiMail className="text-xl" />
-            <span className=" text-xl text-zinc-500 font-medium">
-              hmdhamed88@gmail.com
-            </span>
-          </div>
-        </div> */}
 
         {/* Mobile Menu Button */}
         <button
@@ -131,6 +88,20 @@ const Header = () => {
           <FiMenu className="text-2xl" />
         </button>
       </div>
+
+        /* Right Section - Login and Cart Icons */}
+        <div className="flex mr-32 justify-center gap-4 items-center w-[12%]">
+          <Link to="/login" className="border-r-2 pr-4">
+            <FiUser className="text-4xl cursor-pointer" />
+          </Link>
+          {/* <FiShoppingCart className="text-2xl cursor-pointer" /> */}
+          <CartIcon />
+        </div>
+
+      </div>
+
+      {/* Lower Section */}
+      
 
       {/* Mobile Menu (Dropdown) */}
       {isMenuOpen && (
