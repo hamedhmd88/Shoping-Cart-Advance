@@ -1,19 +1,21 @@
 // src/hooks/useSearch.js
-import { useState } from 'react';
+import { useState } from "react";
 
 const useSearch = (items, searchTerm, category, sortOption) => {
-  const [search, setSearch] = useState(searchTerm || '');
+  const [search, setSearch] = useState(searchTerm || "");
 
   const filteredItems = items.filter((item) => {
-    const matchesSearch = item.title.toLowerCase().includes(search.toLowerCase());
+    const matchesSearch = item.title
+      .toLowerCase()
+      .includes(search.toLowerCase());
     const matchesCategory = !category || item.category === category;
     return matchesSearch && matchesCategory;
   });
 
   const sortedItems = filteredItems.sort((a, b) => {
-    if (sortOption === 'lowToHigh') {
+    if (sortOption === "lowToHigh") {
       return a.price - b.price;
-    } else if (sortOption === 'highToLow') {
+    } else if (sortOption === "highToLow") {
       return b.price - a.price;
     }
     return 0;

@@ -37,10 +37,10 @@ const HomePage = ({ name }) => {
       <SectionHomePage />
 
       <PopularProductMen />
-      
+
       <PopularProdutWomen />
 
-      <GridSection/>
+      <GridSection />
 
       <Accordn />
     </div>

@@ -1,5 +1,5 @@
 import AboutUs from "../components/AboutUs";
-import about from "../assets/logo/contact.jpg"
+import about from "../assets/logo/contact.jpg";
 function AboutUsPage() {
   return (
     <>
@@ -16,7 +16,7 @@ function AboutUsPage() {
             </h1>
           </div>
         </div>
-        <AboutUs/>
+        <AboutUs />
       </div>
     </>
   );

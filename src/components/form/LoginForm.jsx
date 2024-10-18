@@ -21,8 +21,10 @@ function LoginForm({ setName, backHandler }) {
 
     if (formStep === 0) {
       // Validate first step
-      if (!firstName.trim()) validationErrors.firstName = "First name is required.";
-      if (!lastName.trim()) validationErrors.lastName = "Last name is required.";
+      if (!firstName.trim())
+        validationErrors.firstName = "First name is required.";
+      if (!lastName.trim())
+        validationErrors.lastName = "Last name is required.";
     } else if (formStep === 1) {
       // Validate contact step
       if (!phone.trim()) validationErrors.phone = "Phone number is required.";
@@ -30,7 +32,8 @@ function LoginForm({ setName, backHandler }) {
     } else if (formStep === 2) {
       // Validate password step
       if (!password.length) validationErrors.password = "Password is required.";
-      if (!confirmPassword.length) validationErrors.confirmPassword = "Confirm password is required.";
+      if (!confirmPassword.length)
+        validationErrors.confirmPassword = "Confirm password is required.";
       if (password && confirmPassword && password !== confirmPassword) {
         validationErrors.confirmPassword = "Passwords do not match."; // Check if passwords are not matching
       }
@@ -72,8 +75,13 @@ function LoginForm({ setName, backHandler }) {
   return (
     <>
       <div className="min-h-screen  flex items-center justify-center select-none mr-12">
-        <form onSubmit={changeHandler} className="w-full m-28 max-w-lg p-12  rounded-xl   border border-gray-200">
-          <h1 className="text-2xl font-bold text-gray-200 italic text-center mb-6">Registration Form</h1>
+        <form
+          onSubmit={changeHandler}
+          className="w-full m-28 max-w-lg p-12  rounded-xl   border border-gray-200"
+        >
+          <h1 className="text-2xl font-bold text-gray-200 italic text-center mb-6">
+            Registration Form
+          </h1>
           <div className="flex justify-between mb-6">
             <ProgressBar step={formStep} />
           </div>
