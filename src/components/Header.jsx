@@ -36,60 +36,71 @@ const Header = () => {
         {/* Left Section - Logo */}
         <div className="flex w-[20%] items-center space-x-2">
           <Link to="/">
-          <img
-            src={logo}
-            alt="Logo"
-            className="ml-8 h-14 w-[200px] text-center"
-          />
+            <img
+              src={logo}
+              alt="Logo"
+              className="ml-8 h-14 w-[200px] text-center"
+            />
           </Link>
-                  </div>
+        </div>
 
         {/* Center Section - Search Bar */}
-        { <div className="w-full flex justify-around items-center mb-5">
-        <nav className="hidden md:flex space-x-6">
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "menu active" : "menu")}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/products"
-            className={({ isActive }) => (isActive ? "menu active" : "menu")}
-          >
-            Products
-          </NavLink>
-          <NavLink
-            to="/cart"
-            className={({ isActive }) => (isActive ? "menu active" : "menu")}
-          >
-            Cart
-          </NavLink>
-          <NavLink
-            to="/about"
-            className={({ isActive }) => (isActive ? "menu active" : "menu")}
-          >
-            About Us
-          </NavLink>
-          <NavLink
-            to="/contact"
-            className={({ isActive }) => (isActive ? "menu active" : "menu")}
-          >
-            Contact Us
-          </NavLink>
-        </nav>
+        {
+          <div className="w-full flex justify-around items-center mb-5">
+            <nav className="hidden md:flex space-x-6">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  isActive ? "menu active" : "menu"
+                }
+              >
+                Home
+              </NavLink>
+              <NavLink
+                to="/products"
+                className={({ isActive }) =>
+                  isActive ? "menu active" : "menu"
+                }
+              >
+                Products
+              </NavLink>
+              <NavLink
+                to="/cart"
+                className={({ isActive }) =>
+                  isActive ? "menu active" : "menu"
+                }
+              >
+                Cart
+              </NavLink>
+              <NavLink
+                to="/about"
+                className={({ isActive }) =>
+                  isActive ? "menu active" : "menu"
+                }
+              >
+                About Us
+              </NavLink>
+              <NavLink
+                to="/contact"
+                className={({ isActive }) =>
+                  isActive ? "menu active" : "menu"
+                }
+              >
+                Contact Us
+              </NavLink>
+            </nav>
 
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="md:hidden focus:outline-none"
+            >
+              <FiMenu className="text-2xl" />
+            </button>
+          </div>
 
-        {/* Mobile Menu Button */}
-        <button
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden focus:outline-none"
-        >
-          <FiMenu className="text-2xl" />
-        </button>
-      </div>
-
-        /* Right Section - Login and Cart Icons */}
+          /* Right Section - Login and Cart Icons */
+        }
         <div className="flex mr-32 justify-center gap-4 items-center w-[12%]">
           <Link to="/login" className="border-r-2 pr-4">
             <FiUser className="text-4xl cursor-pointer" />
@@ -97,11 +108,9 @@ const Header = () => {
           {/* <FiShoppingCart className="text-2xl cursor-pointer" /> */}
           <CartIcon />
         </div>
-
       </div>
 
       {/* Lower Section */}
-      
 
       {/* Mobile Menu (Dropdown) */}
       {isMenuOpen && (
@@ -118,7 +127,6 @@ const Header = () => {
           <Link to="/contact" className="block py-2 hover:text-gray-200">
             Contact
           </Link>
-
         </nav>
       )}
     </header>

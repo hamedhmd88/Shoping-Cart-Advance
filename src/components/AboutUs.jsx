@@ -28,26 +28,27 @@ const AboutUs = () => {
       </div>
       <div className="border-r border-b border-gray-200 mt-3">
         <h2 className="text-3xl  md:text-4xl font-bold text-left text-gray-200 mt-8 mr-5">
-        What We Do?
+          What We Do?
         </h2>
 
         <p className="text-lg md:text-xl text-gray-300  my-4 text-left max-w-2xl mr-5">
-        We specialize in providing top-notch products across various industries.
-        Our team ensures that each item we offer meets high standards of quality
-        and customer satisfaction. From consumer electronics to household goods,
-        we strive to deliver the best shopping experience.
+          We specialize in providing top-notch products across various
+          industries. Our team ensures that each item we offer meets high
+          standards of quality and customer satisfaction. From consumer
+          electronics to household goods, we strive to deliver the best shopping
+          experience.
         </p>
       </div>
       <div className="border-l border-b border-gray-200 mt-6">
         <h2 className="text-3xl  md:text-4xl font-bold text-left text-gray-200 mt-8 ml-5">
-        Where to Find Us?
+          Where to Find Us?
         </h2>
 
         <p className="text-lg md:text-xl text-gray-300 my-4 text-left max-w-2xl ml-5">
-        We are primarily an online business, delivering products straight to
-        your doorstep. However, if you'd like to visit us in person, our
-        headquarters are located in Tehran, Main Street, Building 123. Whether
-        online or offline, we are always here to serve your needs.
+          We are primarily an online business, delivering products straight to
+          your doorstep. However, if you'd like to visit us in person, our
+          headquarters are located in Tehran, Main Street, Building 123. Whether
+          online or offline, we are always here to serve your needs.
         </p>
       </div>
     </div>
