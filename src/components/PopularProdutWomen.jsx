@@ -1,36 +1,39 @@
-import React from 'react'
-import { fetchProducts } from '../api/api';
-import Loader from '../loader/Loader';
-import { useQuery } from 'react-query';
-import { Link } from 'react-router-dom';
-import Rating from './Rating ';
+import React from "react";
+import { fetchProducts } from "../api/api";
+import Loader from "../loader/Loader";
+import { useQuery } from "react-query";
+import { Link } from "react-router-dom";
+import Rating from "./Rating ";
 
 import popular6 from "../assets/logo/popular6.png";
 import popular7 from "../assets/logo/popular7.png";
 import popular8 from "../assets/logo/popular8.png";
-import { useDispatch, useSelector } from 'react-redux';
-import { addToCart, removeFromCart } from '../redux/cartSlice';
-
+import { useDispatch, useSelector } from "react-redux";
+import { addToCart, removeFromCart } from "../redux/cartSlice";
 
 function PopularProdutWomen() {
-    const { data: products, isLoading, isError, error } = useQuery("products", fetchProducts);
-    const dispatch = useDispatch();
-    const cart = useSelector((state) => state.cart);
-    const imagesPopular = [ popular6, popular7, popular8, ];
+  const {
+    data: products,
+    isLoading,
+    isError,
+    error,
+  } = useQuery("products", fetchProducts);
+  const dispatch = useDispatch();
+  const cart = useSelector((state) => state.cart);
+  const imagesPopular = [popular6, popular7, popular8];
 
-    const getFirstFiveWords = (text) => {
-        const words = text.split(" ");
-        return words.slice(0, 5).join(" ");
-      };
+  const getFirstFiveWords = (text) => {
+    const words = text.split(" ");
+    return words.slice(0, 5).join(" ");
+  };
 
+  if (isLoading) {
+    return <Loader />;
+  }
 
-    if (isLoading) {
-        return <Loader/>;
-      }
-    
-      if (isError) {
-        return <p className="text-center text-red-500">Error: {error.message}</p>;
-      }
+  if (isError) {
+    return <p className="text-center text-red-500">Error: {error.message}</p>;
+  }
   return (
     <>
       <div className=" flex flex-col items-center justify-center">
@@ -69,7 +72,6 @@ function PopularProdutWomen() {
                     {/* Display the rating */}
                     <Rating rating={product?.rating?.rate} />
                   </div>
-                 
                 </Link>
                 {/* Add to Cart button or quantity controls */}
                 <div className="flex justify-center gap-4 items-center mt-4 text-white">
@@ -81,7 +83,9 @@ function PopularProdutWomen() {
                       >
                         -
                       </button>
-                      <span className="text-gray-400 font-medium text-lg">{productQuantity}</span>
+                      <span className="text-gray-400 font-medium text-lg">
+                        {productQuantity}
+                      </span>
                       <button
                         onClick={() => dispatch(addToCart(product))}
                         className="px-4 py-2 border  border-blue-600 text-blue-600 font-extrabold text-md rounded-md hover:bg-blue-600 hover:text-gray-200 transition"
@@ -104,7 +108,7 @@ function PopularProdutWomen() {
         </section>
       </div>
     </>
-  )
+  );
 }
 
-export default PopularProdutWomen
+export default PopularProdutWomen;

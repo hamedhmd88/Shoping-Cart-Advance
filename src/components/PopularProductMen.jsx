@@ -76,7 +76,6 @@ function PopularProductMen() {
                     {/* Display the rating */}
                     <Rating rating={product?.rating?.rate} />
                   </div>
-                 
                 </Link>
                 {/* Add to Cart button or quantity controls */}
                 <div className="flex justify-center gap-4 items-center mt-8">
@@ -88,7 +87,9 @@ function PopularProductMen() {
                       >
                         -
                       </button>
-                      <span className=" text-gray-400 font-medium text-lg">{productQuantity}</span>
+                      <span className=" text-gray-400 font-medium text-lg">
+                        {productQuantity}
+                      </span>
                       <button
                         onClick={() => dispatch(addToCart(product))}
                         className="px-4 py-2 border  border-blue-600 text-blue-600 font-extrabold text-md rounded-md hover:bg-blue-600 hover:text-gray-200 transition"

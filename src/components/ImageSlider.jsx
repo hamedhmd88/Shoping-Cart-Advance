@@ -58,8 +58,9 @@ function ImageSlider() {
     logo5,
   ];
 
-  return <>
-    <section className=" w-full  py-6 overflow-hidden">
+  return (
+    <>
+      <section className=" w-full  py-6 overflow-hidden">
         <div className="flex items-center space-x-6 animate-scroll-horizontal">
           {/* Repeated logos for infinite scroll effect */}
           {[...images].map((image, i) => (
@@ -69,12 +70,12 @@ function ImageSlider() {
                 alt="Logo 1"
                 className="h-16 w-16 object-contain grayscale hover:scale-110 transition-transform"
               />
-              
             </React.Fragment>
           ))}
         </div>
       </section>
-  </>;
+    </>
+  );
 }
 
 export default ImageSlider;
