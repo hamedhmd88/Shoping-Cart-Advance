@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { useQuery } from "react-query";
 import { Link } from "react-router-dom";
@@ -33,7 +32,12 @@ const ProductList = ({ category }) => {
     return words.slice(0, 7).join(" ");
   };
 
-  if (isLoading) return <div><Loader/></div>;
+  if (isLoading)
+    return (
+      <div>
+        <Loader />
+      </div>
+    );
   if (error) return <div>Error fetching products</div>;
 
   return (
@@ -49,7 +53,10 @@ const ProductList = ({ category }) => {
           />
 
           <div className="mb-4">
-            <label htmlFor="sort" className="font-semibold text-grayslate-200 drop-shadow-2xl mr-2">
+            <label
+              htmlFor="sort"
+              className="font-semibold text-grayslate-200 drop-shadow-2xl mr-2"
+            >
               Sort by price
             </label>
             <select
@@ -58,9 +65,15 @@ const ProductList = ({ category }) => {
               onChange={(e) => setSortOption(e.target.value)}
               className="p-2 bg-gray-400 text-gray-800  border-2 border-gray-200 rounded-md focus:outline-none focus:border-gray-400"
             >
-              <option className=" bg-transparent" value="all">All</option>
-              <option className=" bg-transparent" value="lowToHigh">Lowest to Highest</option>
-              <option className=" bg-transparent" value="highToLow">Highest to Lowest</option>
+              <option className=" bg-transparent" value="all">
+                All
+              </option>
+              <option className=" bg-transparent" value="lowToHigh">
+                Lowest to Highest
+              </option>
+              <option className=" bg-transparent" value="highToLow">
+                Highest to Lowest
+              </option>
             </select>
           </div>
         </div>
@@ -103,9 +116,7 @@ const ProductList = ({ category }) => {
                       >
                         -
                       </button>
-                      <span className="text-slate-800">
-                        {productQuantity}
-                      </span>
+                      <span className="text-slate-800">{productQuantity}</span>
                       <button
                         onClick={() => dispatch(addToCart(product))}
                         className="px-3 py-1 text-md bg-blue-500 text-white rounded-md hover:bg-blue-700 transition"
@@ -132,7 +143,3 @@ const ProductList = ({ category }) => {
 };
 
 export default ProductList;
-
-
-
-

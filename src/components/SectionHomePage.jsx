@@ -2,9 +2,9 @@ import { Link } from "react-router-dom";
 import login from "../assets/logo/login.jpg";
 import product from "../assets/logo/product.jpg";
 import site from "../assets/logo/site.jpg";
-import welcome from "../assets/logo/welcome.svg"
-import products from "../assets/logo/products.svg"
-import login1 from "../assets/logo/login1.svg"
+import welcome from "../assets/logo/welcome.svg";
+import products from "../assets/logo/products.svg";
+import login1 from "../assets/logo/login1.svg";
 function SectionHomePage() {
   return (
     <>
@@ -26,7 +26,10 @@ function SectionHomePage() {
             Discover a world of amazing products. We offer a wide range of
             high-quality items that will satisfy your every need.
           </p>
-          <Link to="/about" className="bg-blue-600 font-semibold text-gray-200 ml-5 px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300">
+          <Link
+            to="/about"
+            className="bg-blue-600 font-semibold text-gray-200 ml-5 px-4 py-2 rounded-lg hover:bg-blue-800 transition duration-300"
+          >
             Learn More
           </Link>
         </div>

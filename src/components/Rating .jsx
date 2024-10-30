@@ -1,9 +1,9 @@
-import React from 'react';
-import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
+import React from "react";
+import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 const Rating = ({ rating }) => {
-  const validRating = typeof rating === 'number' && rating >= 0 ? rating : 0;
-  
+  const validRating = typeof rating === "number" && rating >= 0 ? rating : 0;
+
   const fullStars = Math.floor(validRating);
   const hasHalfStar = validRating - fullStars >= 0.5;
   const emptyStars = Math.max(0, 5 - fullStars - (hasHalfStar ? 1 : 0));
